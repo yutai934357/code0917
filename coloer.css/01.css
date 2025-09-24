@@ -1,0 +1,12 @@
+.mh1{
+    background: color(rgb(114, 78, 78));
+    front-size: 2em;
+}
+#mh2{
+     color:blue(rgb(89, 102, 67));
+    front-size: 2em;
+}
+h1{
+    color: rgb(86, 130, 156);
+    front-size: 2em;
+}
