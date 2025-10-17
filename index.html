@@ -1,57 +1,179 @@
-<!DOCTYPE html">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Red Design</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FREECSS_JQUERYBLOCK</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 自訂樣式 -->
+    <link rel="stylesheet" href="coloer.css/style.css">
 </head>
 
 <body>
-    <header id="masthead">
-
-        <hl style ="color: cadetblue;"><img alt="Red Lantern logo" src="images/rl_logo.png" /></hl>
-        <ul id="nav">
-            <li><a class="active" title="Red Lantern home" href="index.html">Home</a></li>
-            <li><a title="Design services" href="services.html">Services</a></li>
-            <li><a title="Our work" href="portfolio.html">Portfolio</a></li>
-            <li><a title="Contact Red Lantern" href="contact.html">Contact</a></li>
-        </ul>
+    <!-- Header / Navbar -->
+    <header class="site-header py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg p-0">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/rl_logo.png" alt="logo" class="logo me-2">
+                    <div class="brand-text">
+                        <div class="small">FREECSS_JQUERYBLOCK</div>
+                        <div class="muted">SMALL COMPANY SLOGAN GOES HERE</div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">PROJECTS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-    <!-- <div > -->
-    <article id="mainContent">
-        <section id="titleBar">
-            <img alt="tokyo building" src="images/tokyo.jpg" />
-            <hl>Red Lantern building unique interfaces <span class="amp">&amp;</span> user experience<h1>
-        </section>
-        <section id="content">
-            <h2>Welcome to the New Red Lantern Design</h2>
-            <p>Red Lantern is a small web design and consulting firm specializing in standards-base
-                Our goal is to build simple, beautiful webpages that make your information easy to </p>
-            <p>If you or your company is interested in working with us, please check out our portfolio
-                work and contact us with your project details. We look forward to hearing from you
-                on th web a little simpler and easier to find.</p>
-            <ul id="link-list">
-                <li><a title="View our portfolio" href="#">View our full portfolio</a></li>
-                <li><a title="Contact Red Lantern" href="#">Contact Red Lantern</a></li>
-            </ul>
-        </section>
-        <section id="sidebar">
-            <h2>Our Work</h2>
-            <ul id="port">
-                <li><img alt="comp0" src="images/markinjapan.jpg" /></li>
-                <li><img alt="comp1" src="images/a2g.jpg" /></li>
-                <li><img alt="comp2" src="images/foobar.jpg" /></li>
-                <li><img alt="comp3" src="images/rpm.jpg" /></li>
-            </ul>
-        </section>
-        <footer id="footer">
-            <p>Copyright &copy; Red Lantern Design, all right reserved</p>
-        </footer>
-    </article>
-    <!-- </div> -->
+
+    <!-- Hero / Carousel -->
+    <section class="carousel-section py-3">
+        <div class="container">
+            <div id="mainCarousel" class="carousel slide shadow-sm rounded" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/header3.jpg" class="d-block w-100" alt="slide1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/header2.jpg" class="d-block w-100" alt="slide2">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top features (3 columns) -->
+    <section class="features py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature p-4 h-100 bg-white rounded shadow-sm text-center">
+                        <img src="images/img1.png" alt="Your Options" style="height:48px;">
+                        <h5 class="text-success mt-2">Your Options</h5>
+                        <a href="#" class="d-block text-success">Cras hendrerit est nec libero ornare sagittis.</a>
+                        <p class="mb-0">Donec interdum dignissim risus et vestibulum.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature p-4 h-100 bg-white rounded shadow-sm text-center">
+                        <img src="/images/img2.png" alt="Company News" style="height:48px;">
+                        <h5 class="text-success mt-2">Company News</h5>
+                        <a href="#" class="d-block text-success">Donec interdum dignissim risus et vestibulum.</a>
+                        <p class="mb-0">Donec eget nisi id magna tempor laoreet. Etiam egestas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature p-4 h-100 bg-white rounded shadow-sm text-center">
+                        <img src="/images/img3.png" alt="Have a Question?" style="height:48px;">
+                        <h5 class="text-success mt-2">Have a Question?</h5>
+                        <a href="#" class="d-block text-success">Cras hendrerit est nec libero ornare sagittis.</a>
+                        <p class="mb-0">Donec interdum dignissim risus et vestibulum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main content (left: card, right: text) -->
+    <main class="container mb-5">
+        <div class="row">
+            <aside class="col-lg-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Quisque dignissim</h5>
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="/images/img1.png" alt="avatar" style="height:48px;" class="me-2">
+                            <div>
+                                <span>123</span>
+                                <a href="#" class="text-success ms-1">More</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="/images/img1.png" alt="briefcase" style="height:48px;" class="me-2">
+                            <div>
+                                <span>123</span>
+                                <a href="#" class="text-success ms-1">More</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="/images/img1.png" alt="printer" style="height:48px;" class="me-2">
+                            <div>
+                                <span>123</span>
+                                <a href="#" class="text-success ms-1">More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-lg-8">
+                <h2 class="text-success">Praesent eu ligula lacus!</h2>
+                <p>Cras interdum placerat ante, sed mattis leo tempus eget. Curabitur non nisi quis velit lobortis scelerisque. Nullam facilisis, nibh nec mattis ornare, nisi lectus accumsan lacus, sit amet tempus justo erat a arcu. Sed arcu mauris, vel faucibus augue. Morbi feugiat luctus cursus.</p>
+                <p>Duis sed felis eget turpis tincidunt congue. Ut ullamcorper velit eu augue eleifend viverra. Quisque dignissim dapibus purus vel placerat. Praesent eu ligula lacus. Integer auctor dictum augue, ac commodo massa tempor vel. Proin cursus, mauris ut semper fringilla, lorem nisi semper nibh, ac viverra libero augue et quam.</p>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-success">&#9654; At vero eos et accusam us iusto</a></li>
+                    <li><a href="#" class="text-success">&#9654; Codo dignissim dicimus blabottis</a></li>
+                    <li><a href="#" class="text-success">&#9654; Praesentium voluptatum deleniti</a></li>
+                    <li><a href="#" class="text-success">&#9654; Molestias excepturi sint occaecati</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer py-4">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="fw-bold mb-2">Recent posts</div>
+                    <div class="mb-1 text-success">Suspendisse rutrum interdum iaculis.</div>
+                    <div class="mb-1 text-success">Suspendisse, Donec iaculis pulvinar mauris, ac vulputate purus quam quis.</div>
+                    <div class="mb-1 text-success">Quisque lectus, mi ornare malesuada Suspendisse rutrum interdum iaculis et sit amet pellentesque.</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fw-bold mb-2">Share with Others</div>
+                    <div class="mb-1"><a href="#" class="text-white text-decoration-none">SUBSCRIBE TO BLOG</a></div>
+                    <div class="mb-1"><a href="#" class="text-white text-decoration-none">Be a fan on Facebook</a></div>
+                    <div class="mb-1"><a href="#" class="text-white text-decoration-none">RSS Feed</a></div>
+                    <div class="mb-1"><a href="#" class="text-white text-decoration-none">Follow us on Twitter</a></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fw-bold mb-2">Useful Resources</div>
+                    <div class="mb-1"><a href="#" class="text-success">Lorem ipsum dolor</a></div>
+                    <div class="mb-1"><a href="#" class="text-success">Maccenas in turpis</a></div>
+                    <div class="mb-1"><a href="#" class="text-success">Morbi fringilla libero</a></div>
+                    <div class="mb-1"><a href="#" class="text-success">In venenatis metus vel</a></div>
+                    <div class="mb-1"><a href="#" class="text-success">Donec cursus quam ac</a></div>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <p class="mb-0 text-center">Website Templates &nbsp;|&nbsp; Privacy Policy | Terms of Use | <a href="#" class="text-white text-decoration-underline">CSS</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
